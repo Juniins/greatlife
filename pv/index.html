@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Script Cartpanda -->
+    <script
+      type="text/javascript"
+      src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/cpsales.js"
+    ></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Your Personalized 21-Day Protocol Natural Recipes Plan is Ready!
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primary: #87a96b;
+        --secondary: #ffb6c1;
+        --accent: #ff7f50;
+        --background: #fff5f5;
+        --white: #ffffff;
+        --text: #333333;
+        --light-pink: #ffe4e6;
+        --light-green: #e8f5e9;
+        --gray: #666666;
+        --success: #4caf50;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: var(--text);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* Header Section */
+      .header-section {
+        background: linear-gradient(
+          135deg,
+          var(--light-pink) 0%,
+          var(--background) 100%
+        );
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      .header-section h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5em;
+        color: var(--text);
+        margin-bottom: 15px;
+        line-height: 1.2;
+      }
+
+      .header-section h1 span {
+        color: var(--primary);
+      }
+
+      .header-section .subtitle {
+        font-size: 1.1em;
+        color: var(--gray);
+        max-width: 600px;
+        margin: 0 auto 40px;
+      }
+
+      /* Price Box */
+      .price-box {
+        background: var(--white);
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: 0 auto 30px;
+      }
+
+      .price-box .label {
+        font-size: 0.9em;
+        color: var(--gray);
+        margin-bottom: 10px;
+      }
+
+      .price-box .prices {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 15px;
+      }
+
+      .price-box .original-price {
+        font-size: 2em;
+        color: #999;
+        text-decoration: line-through;
+      }
+
+      .price-box .current-price {
+        font-size: 3.5em;
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .price-box .discount-label {
+        color: var(--primary);
+        font-weight: 600;
+      }
+
+      /* CTA Button */
+      .cta-button {
+        background: var(--accent);
+        color: var(--white);
+        padding: 20px 50px;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.2em;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 20px rgba(255, 127, 80, 0.3);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(255, 127, 80, 0.4);
+      }
+
+      .cta-button:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2);
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+      }
+
+      .cta-button:active:before {
+        width: 300px;
+        height: 300px;
+      }
+
+      /* Story Section */
+      .story-section {
+        padding: 80px 20px;
+        background: var(--white);
+        text-align: center;
+      }
+
+      .story-content {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 1.1em;
+        line-height: 1.8;
+        color: var(--gray);
+      }
+
+      .story-content p {
+        margin-bottom: 20px;
+      }
+
+      .highlight-text {
+        background: linear-gradient(
+          to bottom,
+          transparent 60%,
+          var(--light-pink) 60%
+        );
+        padding: 2px 5px;
+        font-weight: 600;
+        color: var(--text);
+      }
+
+      /* Benefits Section */
+      .benefits-section {
+        padding: 80px 20px;
+        background: var(--background);
+      }
+
+      .section-title {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 50px;
+        color: var(--text);
+      }
+
+      .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .benefit-card {
+        background: var(--white);
+        padding: 40px 30px;
+        border-radius: 20px;
+        text-align: center;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .benefit-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: linear-gradient(
+          90deg,
+          var(--primary),
+          var(--secondary),
+          var(--accent)
+        );
+      }
+
+      .benefit-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .benefit-icon {
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+
+      .benefit-title {
+        font-size: 1.3em;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: var(--text);
+      }
+
+      .benefit-description {
+        color: var(--gray);
+        line-height: 1.6;
+      }
+
+      /* Package Section */
+      .package-section {
+        padding: 80px 20px;
+        background: var(--white);
+      }
+
+      .package-items {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .package-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 30px;
+        padding: 30px;
+        background: var(--light-pink);
+        border-radius: 15px;
+        transition: all 0.3s ease;
+      }
+
+      .package-item:nth-child(2) {
+        background: var(--light-green);
+      }
+
+      .package-item:nth-child(3) {
+        background: #fff3e0;
+      }
+
+      .package-item:hover {
+        transform: translateX(10px);
+      }
+
+      .package-number {
+        background: var(--white);
+        color: var(--accent);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+
+      .package-content h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: var(--text);
+      }
+
+      .package-content p {
+        color: var(--gray);
+        margin-bottom: 5px;
+      }
+
+      .package-value {
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      /* Testimonials Section */
+      .testimonials-section {
+        padding: 80px 20px;
+        background: var(--background);
+      }
+
+      .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .testimonial-card {
+        background: var(--white);
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        position: relative;
+      }
+
+      .testimonial-card::before {
+        content: '"';
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        font-size: 4em;
+        color: var(--accent);
+        opacity: 0.3;
+      }
+
+      .testimonial-text {
+        font-style: italic;
+        color: var(--gray);
+        margin-bottom: 20px;
+        line-height: 1.8;
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .author-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: var(--light-pink);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+      }
+
+      .author-info h4 {
+        color: var(--text);
+        margin-bottom: 3px;
+      }
+
+      .author-info p {
+        font-size: 0.9em;
+        color: var(--accent);
+      }
+
+      /* FAQ Section */
+      .faq-section {
+        padding: 80px 20px;
+        background: var(--white);
+      }
+
+      .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .faq-item {
+        margin-bottom: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+
+      .faq-question {
+        padding: 25px 30px;
+        background: var(--light-gray);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease;
+      }
+
+      .faq-question:hover {
+        background: var(--light-pink);
+      }
+
+      .faq-question h3 {
+        font-size: 1.1em;
+        color: var(--text);
+      }
+
+      .faq-icon {
+        font-size: 1.5em;
+        color: var(--accent);
+        transition: transform 0.3s ease;
+      }
+
+      .faq-answer {
+        padding: 0 30px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .faq-item.active .faq-answer {
+        padding: 20px 30px 30px;
+        max-height: 500px;
+      }
+
+      .faq-item.active .faq-icon {
+        transform: rotate(45deg);
+      }
+
+      /* Urgency Section */
+      .urgency-section {
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #fff3e0 0%, var(--light-pink) 100%);
+        text-align: center;
+      }
+
+      .countdown-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 30px 0;
+      }
+
+      .countdown-item {
+        background: var(--white);
+        padding: 20px;
+        border-radius: 15px;
+        min-width: 80px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .countdown-number {
+        font-size: 2.5em;
+        font-weight: 700;
+        color: var(--accent);
+      }
+
+      .countdown-label {
+        font-size: 0.9em;
+        color: var(--gray);
+        text-transform: uppercase;
+      }
+
+      /* Guarantee Section */
+      .guarantee-section {
+        padding: 80px 20px;
+        background: var(--white);
+        text-align: center;
+      }
+
+      .guarantee-box {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px;
+        background: var(--light-green);
+        border-radius: 20px;
+        position: relative;
+      }
+
+      .guarantee-seal {
+        position: absolute;
+        top: -30px;
+        right: 30px;
+        background: var(--success);
+        color: var(--white);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 0.9em;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(76, 175, 80, 0.3);
+      }
+
+      /* Final CTA Section */
+      .final-cta-section {
+        padding: 100px 20px;
+        background: linear-gradient(
+          135deg,
+          var(--primary) 0%,
+          var(--secondary) 100%
+        );
+        text-align: center;
+        color: var(--white);
+      }
+
+      .final-cta-section h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+
+      .final-cta-section p {
+        font-size: 1.3em;
+        margin-bottom: 40px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .guarantee-badges {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
+
+      .badge {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--white);
+        font-size: 0.9em;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .header-section h1 {
+          font-size: 2em;
+        }
+
+        .benefits-grid,
+        .testimonials-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .countdown-container {
+          flex-wrap: wrap;
+        }
+
+        .guarantee-seal {
+          position: static;
+          margin: 0 auto 20px;
+        }
+
+        .final-cta-section h2 {
+          font-size: 2em;
+        }
+      }
+
+      /* Animations */
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      .pulse {
+        animation: pulse 2s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <section class="header-section">
+      <h1>
+        Your Personalized <span>21-Day Protocol Natural Recipes</span> Plan is
+        Ready! 🌿
+      </h1>
+      <p class="subtitle">
+        Based on your quiz responses, we've created a custom meal plan designed
+        specifically for your goals, preferences, and lifestyle.
+      </p>
+
+      <div class="price-box">
+        <p class="label">Special Quiz Discount Applied!</p>
+        <div class="prices">
+          <span class="original-price">$97</span>
+          <span class="current-price">$37</span>
+        </div>
+        <p class="discount-label">Offer expires in 24 hours</p>
+      </div>
+
+      <button class="cta-button pulse" onclick="orderNow()">
+        Get My Custom Plan Now →
+      </button>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section">
+      <div class="story-content">
+        <p>
+          I know exactly how you feel. Struggling with stubborn weight, feeling
+          exhausted every afternoon, and frustrated that nothing seems to work
+          long-term...
+        </p>
+
+        <p>
+          You've tried diet after diet, only to end up back where you started
+          (or worse). The problem isn't your willpower - it's that
+          <span class="highlight-text"
+            >you've never had a plan designed specifically for YOU.</span
+          >
+        </p>
+
+        <p>
+          <strong>Here's the truth:</strong> Generic diets fail because they
+          ignore your unique metabolism, lifestyle, and preferences. After
+          analyzing thousands of women's health journeys, we discovered that
+          personalization is the KEY to lasting transformation.
+        </p>
+
+        <p>
+          That's why your Protocol Natural Recipes plan is different. It's not
+          just another diet - it's YOUR blueprint for sustainable health and
+          vitality.
+        </p>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+      <h2 class="section-title">What You'll Experience in Just 21 Days</h2>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">⚡</div>
+          <h3 class="benefit-title">Natural Weight Loss</h3>
+          <p class="benefit-description">
+            Lose 5-10kg naturally without starving yourself or counting calories
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">❤️</div>
+          <h3 class="benefit-title">All-Day Energy</h3>
+          <p class="benefit-description">
+            Wake up refreshed and maintain steady energy without afternoon
+            crashes
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">⭐</div>
+          <h3 class="benefit-title">Pain Relief</h3>
+          <p class="benefit-description">
+            Reduce inflammation and ease joint pain through targeted nutrition
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Package Section -->
+    <section class="package-section">
+      <h2 class="section-title">Your Complete Transformation Package</h2>
+
+      <div class="package-items">
+        <div class="package-item">
+          <div class="package-number">1</div>
+          <div class="package-content">
+            <h3>Your Personalized 21-Day Meal Plan</h3>
+            <p>
+              Customized to your goals, restrictions, and preferences with daily
+              shopping lists and prep guides
+            </p>
+            <p class="package-value">Value: $97</p>
+          </div>
+        </div>
+
+        <div class="package-item">
+          <div class="package-number">2</div>
+          <div class="package-content">
+            <h3>Recipe Collection (50+ recipes)</h3>
+            <p>
+              Energy-boosting breakfasts, satisfying lunches, family-friendly
+              dinners, and guilt-free desserts
+            </p>
+            <p class="package-value">Value: $47</p>
+          </div>
+        </div>
+
+        <div class="package-item">
+          <div class="package-number">3</div>
+          <div class="package-content">
+            <h3>Daily Support Guide</h3>
+            <p>
+              Morning motivation, evening check-ins, and troubleshooting for
+              common challenges
+            </p>
+            <p class="package-value">Value: $37</p>
+          </div>
+        </div>
+
+        <div class="package-item">
+          <div class="package-number">4</div>
+          <div class="package-content">
+            <h3>Bonus: Quick Start Guide + Restaurant Survival Guide</h3>
+            <p>
+              Get started immediately and stay on track even when eating out
+            </p>
+            <p class="package-value">Value: $27</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px">
+        <p style="font-size: 1.5em; color: var(--gray)">
+          Total Value: <span style="text-decoration: line-through">$208</span>
+        </p>
+        <p style="font-size: 2em; color: var(--accent); font-weight: 700">
+          Your Price Today: Only $37
+        </p>
+        <button class="cta-button" onclick="orderNow()">
+          Claim My 82% Discount Now →
+        </button>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <h2 class="section-title">
+        Join 10,000+ Women Who've Transformed Their Lives
+      </h2>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "I lost 8kg in 21 days! But more importantly, my energy is through
+            the roof and my joint pain is GONE. This isn't just a diet, it's a
+            lifestyle I can actually stick to."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SM</div>
+            <div class="author-info">
+              <h4>Sarah Mitchell</h4>
+              <p>Lost 8kg in 21 days</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "As a busy mom of 3, I needed something SIMPLE. These recipes are
+            quick, delicious, and my whole family loves them. I've never felt
+            better!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JK</div>
+            <div class="author-info">
+              <h4>Jennifer Kim</h4>
+              <p>Lost 6kg & gained energy</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "At 45, I thought my metabolism was broken. This personalized
+            approach changed everything. I look and feel 10 years younger!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ML</div>
+            <div class="author-info">
+              <h4>Maria Lopez</h4>
+              <p>Lost 10kg & reduced inflammation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>Is this really customized just for me?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes! Based on your quiz answers about your age, weight goals,
+              dietary preferences, cooking time, and health conditions, we
+              create a completely unique plan. No two plans are exactly the same
+              because no two people are exactly the same.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>What if I don't like some of the recipes?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              With 50+ recipes to choose from, you'll have plenty of options!
+              Each recipe includes substitution suggestions, and you can easily
+              swap meals within your plan. Plus, all recipes use simple, natural
+              ingredients you can find at any grocery store.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>How quickly will I see results?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Most women report increased energy within 3-5 days and visible
+              weight loss by day 7. By day 21, the average weight loss is
+              5-10kg, but individual results vary based on starting point and
+              adherence to the plan.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>What happens after 21 days?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Your plan includes a Maintenance Guide to help you continue your
+              healthy lifestyle. The habits and recipes you'll learn are
+              designed to become part of your permanent lifestyle, not just a
+              temporary diet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Urgency Section -->
+    <section class="urgency-section">
+      <h2 class="section-title">⏰ Your Special Discount Expires Soon!</h2>
+      <p style="font-size: 1.2em; color: var(--gray); margin-bottom: 30px">
+        This exclusive quiz discount is only available for the next 24 hours
+      </p>
+
+      <div class="countdown-container">
+        <div class="countdown-item">
+          <div class="countdown-number" id="hours">23</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="minutes">59</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="seconds">59</div>
+          <div class="countdown-label">Seconds</div>
+        </div>
+      </div>
+
+      <p style="color: var(--accent); font-weight: 600; font-size: 1.1em">
+        When the timer hits zero, the price goes back to $97
+      </p>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee-section">
+      <h2 class="section-title">Your Success is 100% Guaranteed</h2>
+
+      <div class="guarantee-box">
+        <div class="guarantee-seal">30-Day<br />Guarantee</div>
+        <h3 style="font-size: 1.5em; margin-bottom: 20px">
+          Love Your Results or Pay Nothing
+        </h3>
+        <p>
+          We're so confident you'll love your personalized Protocol Natural
+          Recipes plan that we offer a full 30-day money-back guarantee. If
+          you're not completely thrilled with your transformation, simply let us
+          know and we'll refund every penny. No questions asked.
+        </p>
+        <p style="margin-top: 20px">
+          <strong
+            >You have nothing to lose (except the weight!) and everything to
+            gain.</strong
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta-section">
+      <h2>Ready to Transform Your Life?</h2>
+      <p>
+        Imagine how you'll feel in just 21 days - lighter, more energetic,
+        confident, and pain-free. Your personalized plan is waiting.
+      </p>
+
+      <button
+        class="cta-button"
+        style="
+          background: var(--white);
+          color: var(--accent);
+          font-size: 1.5em;
+          padding: 25px 60px;
+        "
+        onclick="orderNow()"
+      >
+        Get My Plan Now - Only $37 💚
+      </button>
+
+      <div class="guarantee-badges">
+        <div class="badge"><span>✓</span> 30-Day Money-Back Guarantee</div>
+        <div class="badge"><span>✓</span> Instant Digital Delivery</div>
+        <div class="badge"><span>✓</span> Personalized Just for You</div>
+      </div>
+    </section>
+
+    <script>
+      // Countdown Timer
+      function startCountdown() {
+        let timeLeft = 24 * 60 * 60; // 24 hours in seconds
+
+        function updateCountdown() {
+          const hours = Math.floor(timeLeft / 3600);
+          const minutes = Math.floor((timeLeft % 3600) / 60);
+          const seconds = timeLeft % 60;
+
+          document.getElementById("hours").textContent = hours
+            .toString()
+            .padStart(2, "0");
+          document.getElementById("minutes").textContent = minutes
+            .toString()
+            .padStart(2, "0");
+          document.getElementById("seconds").textContent = seconds
+            .toString()
+            .padStart(2, "0");
+
+          if (timeLeft > 0) {
+            timeLeft--;
+            setTimeout(updateCountdown, 1000);
+          }
+        }
+
+        updateCountdown();
+      }
+
+      // FAQ Toggle
+      function toggleFAQ(element) {
+        const faqItem = element.parentElement;
+        faqItem.classList.toggle("active");
+      }
+
+      // Order Now Function
+      function orderNow() {
+        window.location.href =
+          "https://pay.igniteplace.online/checkout/150765669:1";
+      }
+
+      // Start countdown on page load
+      window.onload = startCountdown;
+    </script>
+  </body>
+</html>
