@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arial:wght@400;600&display=swap"
+      rel="preload"
+      as="style"
+      media="all"
+      onload='this.onload=null,this.rel="stylesheet"'
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Secret Recipes" />
+    <meta property="og:description" content="Secret Recipe" />
+    <meta
+      property="og:image"
+      content="https://media.atomicatpages.net/Images/ogimage.png"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta name="description" content="Secret Recipe" />
+    <style type="text/css" media="all">
+      :root {
+        --a-g-bg-color: [object Object];
+        --white: #ffffff;
+      }
+      .a-cloned .a-c-cont {
+        width: 100%;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: Roboto, sans-serif;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+      *,
+      ::after,
+      ::before,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #fff;
+      }
+      @media screen and (max-width: 480px) {
+        body {
+          background: #fff;
+        }
+      }
+      .atomicat-interactive-quiz-progress {
+        margin: 20px auto;
+        padding: 0;
+        max-width: 28rem;
+        height: 10px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 1rem;
+      }
+      .atomicat-interactive-quiz-progress.atomicat-margin-top-zero {
+        margin-top: 0;
+      }
+      button {
+        border: none;
+        outline: 0;
+        background: 0 0;
+        font-family: "Space Grotesk", sans-serif;
+        cursor: pointer;
+      }
+      .atomicat-interactive-quiz-bar-bg {
+        opacity: 0.1;
+        width: 100%;
+      }
+      .atomicat-interactive-quiz-bar,
+      .atomicat-interactive-quiz-bar-bg {
+        height: 100%;
+        background: var(--a-g-theme-color, #6495ed);
+        transition-duration: 0.7s;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      .atomi-h1 {
+        font-size: 36px;
+      }
+      .atomi-h2 {
+        font-size: 30px;
+      }
+      .atomi-h3 {
+        font-size: 24px;
+      }
+      .atomi-h4 {
+        font-size: 20px;
+      }
+      .atomi-h5 {
+        font-size: 18px;
+      }
+      .atomi-h6 {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: inherit;
+      }
+      .atomicat-global-modal-trigger,
+      [class*="atomicat-modal-trigger"] {
+        cursor: pointer;
+      }
+      .atomicat-cursor-pointer {
+        cursor: pointer;
+      }
+      .a-o-cont.atomicat-unfold,
+      .atomicat-unfold {
+        overflow: hidden;
+        height: 200px;
+        align-items: start;
+        position: relative;
+        transition: height 4s ease-in-out;
+      }
+      .a-o-cont.atomicat-unfold-transition {
+        transition: height 0.5s ease-in-out;
+      }
+      .a-b-cont {
+        word-wrap: break-word;
+      }
+      .atomicat-unfold-button {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        z-index: 1;
+        background: 0 0;
+        border: none;
+        padding: 10px;
+        text-decoration: underline;
+      }
+      .atomicat-unfold::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgba(255, 255, 255, 0)),
+          to(white)
+        );
+        background: linear-gradient(rgba(255, 255, 255, 0), #fff);
+        transition: background 0.5s ease-in-out;
+        z-index: 1;
+        height: 100%;
+      }
+      .atomicat-ribbon-container {
+        --text: "MOST POPULAR";
+        --first-color: #62baea;
+        --second-color: #4a98bf;
+        position: relative;
+      }
+      .atomicat-ribbon-container .atomicat-ribbon {
+        position: absolute;
+        top: -10px;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9;
+        overflow: hidden;
+      }
+      .a-e-cont.atomicat-infinite-entrance-animation {
+        animation-iteration-count: infinite;
+      }
+      .a-b-o-cont {
+        width: 100%;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-width: 100%;
+        position: relative;
+      }
+      .atomicat-ribbon-top-left {
+        left: -10px;
+      }
+      .atomicat-ribbon-top-left::before {
+        transform: rotate(-45deg) translateY(-20px);
+      }
+      .atomicat-ribbon-top-left::after {
+        left: 0;
+      }
+      .atomicat-ribbon-top-right {
+        right: -10px;
+      }
+      .atomicat-ribbon-top-right::before {
+        transform: rotate(45deg) translateY(-20px);
+      }
+      .atomicat-ribbon-top-right::after {
+        right: 0;
+      }
+      .atomicat-ribbon-bottom-left {
+        left: -10px;
+        bottom: -10px;
+      }
+      .atomicat-ribbon-bottom-left::before {
+        transform: rotate(45deg) translateY(-20px);
+      }
+      .atomicat-ribbon-bottom-left::after {
+        left: 0;
+      }
+      .atomicat-ribbon-bottom-right {
+        right: -10px;
+        bottom: -10px;
+      }
+      .atomicat-ribbon-bottom-right::before {
+        transform: rotate(-45deg) translateY(-20px);
+      }
+      .atomicat-ribbon-bottom-right::after {
+        right: 0;
+      }
+      .atomicat-ribbon-container .atomicat-ribbon::before {
+        content: var(--text);
+        position: absolute;
+        width: 150%;
+        height: 40px;
+        background: var(--first-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        letter-spacing: 0.1em;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+      .atomicat-ribbon-container .atomicat-ribbon::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 10px;
+        height: 10px;
+        background: var(--second-color);
+        z-index: -1;
+        box-shadow: 140px -140px var(--second-color);
+      }
+      .atomicat-marquee {
+        position: relative;
+        display: flex;
+      }
+      .atomicat-overflow-hidden {
+        overflow: hidden;
+      }
+      .atomicat-marquee-content {
+        flex-shrink: 0;
+        display: flex;
+        justify-content: space-around;
+        min-width: 100%;
+      }
+      .atomicat-enable-animation .atomicat-marquee-content {
+        animation: atomicat-marquee-animation 10s linear infinite;
+      }
+      .atomicat-marquee-reverse .atomicat-marquee-content {
+        animation-direction: reverse;
+      }
+      .atomicat-marquee-alternate .atomicat-marquee-content {
+        animation-direction: alternate;
+      }
+      .atomicat-marquee-pause:hover .atomicat-marquee-content {
+        animation-play-state: paused;
+      }
+      @keyframes atomicat-marquee-animation {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+      .atomicat-html-element {
+        width: 18px;
+        height: 18px;
+      }
+      .atomicat-page {
+        background-color: red;
+      }
+      .atomicat-global-styles-heading,
+      .atomicat-heading-title {
+        color: #000;
+        font-family: Arial, sans-serif;
+      }
+      .atomicat-global-styles-text,
+      .atomicat-heading-title > span,
+      .atomicat-text,
+      .atomicat-text > span {
+        color: #000;
+        font-family: Arial, sans-serif;
+      }
+      .a-e-cont.atomicat-button > .atomicat-button,
+      .atomicat-global-styles-button {
+        color: #fff;
+        font-family: Arial, sans-serif;
+        background: var(--a-g-theme-color, #6495ed);
+      }
+      .atomicat-fullheight {
+        height: 100%;
+      }
+      .atomicat-disable-selection {
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        cursor: default;
+      }
+      .atomicat-hidden {
+        display: none;
+      }
+      .a-r {
+        position: relative;
+      }
+      .a-r .atomicat-hidden,
+      .atomicat-hidden.a-i-e-cont,
+      .atomicat-hidden.a-r {
+        display: none;
+      }
+      .atomicat-chosen-option {
+        background: #ff0;
+      }
+      .atomicat-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+      }
+      .flex-row {
+        display: flex;
+      }
+      .flex-row-reverse {
+        flex-direction: row-reverse;
+      }
+      .flex-column-reverse {
+        flex-direction: column-reverse;
+      }
+      .flex-column {
+        display: flex;
+        flex-direction: column;
+      }
+      .flex-row-all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .flex-column-all {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .flex-row-reverse {
+        flex-direction: row-reverse;
+      }
+      .flex-column-reverse {
+        flex-direction: column-reverse;
+      }
+      .flex-row-between {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .gap-1 {
+        gap: 1rem;
+      }
+      .flex-align-center {
+        align-items: center;
+      }
+      .flex-row-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .flex-row-align-center {
+        display: flex;
+        align-items: center;
+      }
+      .a-c-cont {
+        max-width: 100%;
+        min-width: 0;
+      }
+      .atomicat-custom-embed iframe {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        line-height: 1;
+        border: none;
+      }
+      .a-c-f-w {
+        width: 100%;
+      }
+      .a-e-cont {
+        max-width: 100%;
+      }
+      .atomicat-transform-element {
+        transform: perspective(var(--atomicat-transform-perspective, 0))
+          rotate(var(--atomicat-transform-rotate-z, 0))
+          rotateX(var(--atomicat-transform-rotate-x, 0))
+          rotateY(var(--atomicat-transform-rotate-y, 0))
+          translate(var(--atomicat-transform-translate, 0))
+          translateX(var(--atomicat-transform-translate-x, 0))
+          translateY(var(--atomicat-transform-translate-y, 0))
+          scaleX(
+            calc(
+              var(--atomicat-transform-flip-x, 1) *
+                var(
+                  --atomicat-transform-scale-x,
+                  var(--atomicat-transform-scale, 1)
+                )
+            )
+          )
+          scaleY(
+            calc(
+              var(--atomicat-transform-flip-y, 1) *
+                var(
+                  --atomicat-transform-scale-y,
+                  var(--atomicat-transform-scale, 1)
+                )
+            )
+          )
+          skewX(var(--atomicat-transform-skew-x, 0))
+          skewY(var(--atomicat-transform-skew-y, 0));
+        transform-origin: var(--atomicat-transform-origin-y)
+          var(--atomicat-transform-origin-x);
+        transition: background 0.3s, border 0.3s, border-radius 0.3s,
+          box-shadow 0.3s,
+          transform var(--atomicat-transform-transition-duration, 0.4s);
+      }
+      .a-e-cont.atomicat-googlemaps {
+        overflow: hidden;
+      }
+      .atomicat-flex {
+        display: flex;
+      }
+      .atomicat-emoji {
+        width: 65px;
+      }
+      .atomica-emoji-unicode {
+        font-size: 65px;
+      }
+      .atomicat-flex-column {
+        display: flex;
+        flex-direction: column;
+      }
+      .atomicat-flex-start {
+        align-self: flex-start;
+      }
+      .atomicat-flex-end {
+        align-self: flex-end;
+      }
+      .atomicat-flex-center {
+        align-self: center;
+      }
+      .atomicat-flex-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .a-o-cont {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .a-o-cont {
+        height: 100%;
+        margin: 0 auto;
+      }
+      .a-acc-cont {
+        position: relative;
+      }
+      .a-i-e-cont {
+        transition: height 0.5s ease-in-out, background 0.5s ease-in-out;
+      }
+      .a-o-cont.a-cont-b > .a-cont {
+        max-width: 1140px;
+      }
+      .a-o-cont.a-cont-f-w > .a-cont {
+        max-width: 100%;
+      }
+      .a-o-cont .a-cont {
+        flex-direction: column;
+      }
+      .a-b-cont > .a-o-cont {
+        margin: 0 auto;
+      }
+      .atomicat-divider-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0;
+        gap: 0.5rem;
+      }
+      .atomicat-divider-flex .atomicat-content {
+        border-bottom: 2px solid #000;
+        width: 50%;
+      }
+      .atomicat-border-bottom {
+        border-bottom: 1.5px solid #e6e8ea;
+      }
+      .atomicat-border-top {
+        border-top: 1.5px solid #e6e8ea;
+      }
+      .a-cont {
+        display: flex;
+        margin: 0 auto;
+        font-weight: 600;
+        min-height: 100%;
+        width: 100%;
+      }
+      .atomicat-hidden-tablet {
+        display: block;
+      }
+      .atomicat-hidden-mobile {
+        display: block;
+      }
+      .atomicat-hidden-desktop {
+        display: none;
+      }
+      @media screen and (max-width: 1024px) {
+        .atomicat-hidden-mobile {
+          display: block;
+        }
+        .atomicat-hidden-desktop {
+          display: block;
+        }
+        .atomicat-hidden-tablet {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .a-o-cont.a-cont-b > .a-cont {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .atomicat-hidden-tablet {
+          display: block;
+        }
+        .atomicat-hidden-desktop {
+          display: block;
+        }
+        .atomicat-hidden-mobile {
+          display: none;
+        }
+        .a-cont {
+          flex-wrap: wrap;
+        }
+      }
+      @media (min-width: 768px) {
+        .atomicat-column[data-col="10"] {
+          width: 10%;
+        }
+        .atomicat-column[data-col="11"] {
+          width: 11.111%;
+        }
+        .atomicat-column[data-col="12"] {
+          width: 12.5%;
+        }
+        .atomicat-column[data-col="14"] {
+          width: 14.285%;
+        }
+        .atomicat-column[data-col="16"] {
+          width: 16.666%;
+        }
+        .atomicat-column[data-col="20"] {
+          width: 20%;
+        }
+        .atomicat-column[data-col="25"] {
+          width: 25%;
+        }
+        .atomicat-column[data-col="30"] {
+          width: 30%;
+        }
+        .atomicat-column[data-col="33"] {
+          width: 33.333%;
+        }
+        .atomicat-column[data-col="40"] {
+          width: 40%;
+        }
+        .atomicat-column[data-col="50"] {
+          width: 50%;
+        }
+        .atomicat-column[data-col="60"] {
+          width: 60%;
+        }
+        .atomicat-column[data-col="66"] {
+          width: 66.666%;
+        }
+        .atomicat-column[data-col="70"] {
+          width: 70%;
+        }
+        .atomicat-column[data-col="75"] {
+          width: 75%;
+        }
+        .atomicat-column[data-col="80"] {
+          width: 80%;
+        }
+        .atomicat-column[data-col="83"] {
+          width: 83.333%;
+        }
+        .atomicat-column[data-col="90"] {
+          width: 90%;
+        }
+        .atomicat-column[data-col="100"] {
+          width: 100%;
+        }
+      }
+      .flexBox {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      @keyframes atomicat-animation-pulse {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.1);
+          opacity: 0.7;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      @keyframes atomicat-animation-pulseShadow {
+        0% {
+          box-shadow: rgb(0 0 0) 0 0 0 0;
+        }
+        80% {
+          box-shadow: rgba(0, 255, 23, 0) 0 0 0 12px;
+        }
+      }
+      .atomicat-button-after {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+      }
+      .atomicat-button-before {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+      }
+      .a-e-cont > .atomicat-button,
+      .atomicat-marquee-content > .atomicat-button {
+        background: var(--a-g-theme-color, #6495ed);
+        padding: 12px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        word-break: break-word;
+        color: #fff;
+        border-radius: var(--a-g-round, 1rem);
+        align-self: center;
+      }
+      .atomicat-button svg {
+        height: 14px;
+      }
+      .atomicat-tooltip-trigger:hover .atomicat-tooltip {
+        opacity: 1;
+        z-index: 1;
+        cursor: pointer;
+      }
+      .a-c-cont .atomicat-tooltip-trigger {
+        overflow: visible;
+        position: relative;
+        cursor: pointer;
+      }
+      .atomicat-tooltip-trigger:hover .atomicat-tooltip-top {
+        animation: atomicat-tooltip-topin 0.3s linear;
+      }
+      .atomicat-tooltip-trigger:hover .atomicat-tooltip-right {
+        animation: atomicat-tooltip-rightin 0.3s linear;
+      }
+      .atomicat-tooltip-trigger:hover .atomicat-tooltip-bottom {
+        animation: atomicat-tooltip-bottomin 0.3s linear;
+      }
+      .atomicat-tooltip-trigger:hover .atomicat-tooltip-left {
+        animation: atomicat-tooltip-leftin 0.3s linear;
+      }
+      .atomicat-tooltip {
+        width: 150px;
+        background-color: #555;
+        color: #fff;
+        animation-duration: 0.3s;
+        opacity: 0;
+        display: block;
+        color: #fff;
+        border-radius: 4px;
+        padding: 10px;
+        position: absolute;
+        z-index: -1;
+        line-height: 1.3;
+        cursor: pointer;
+        text-align: left;
+      }
+      .atomicat-tooltip::after {
+        border-width: 5px;
+        content: "";
+        position: absolute;
+        border-style: solid;
+      }
+      .atomicat-tooltip-top {
+        bottom: 100%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin: 0 auto 10px auto;
+      }
+      .atomicat-tooltip-top::after {
+        top: 100%;
+        left: calc(50% - 5px);
+        border-top-color: #555;
+        margin-top: 0;
+        border-color: #000 transparent transparent transparent;
+        border-top-color: #555;
+      }
+      .atomicat-tooltip-right {
+        top: 50%;
+        left: 100%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        margin-left: 10px;
+        border-color: transparent #000 transparent transparent;
+      }
+      .atomicat-tooltip-right::after {
+        top: calc(50% - 5px);
+        right: 100%;
+        border-color: transparent #000 transparent transparent;
+        border-right-color: #555;
+      }
+      .atomicat-tooltip-bottom {
+        top: 100%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin: 10px auto 0 auto;
+      }
+      .atomicat-tooltip-bottom::after {
+        left: calc(50% - 5px);
+        margin-top: 0;
+        bottom: 100%;
+        border-color: transparent transparent #000 transparent;
+        border-bottom-color: #555;
+      }
+      .atomicat-tooltip-left {
+        top: 50%;
+        right: 100%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin-right: 10px;
+      }
+      .atomicat-tooltip-left::after {
+        top: calc(50% - 5px);
+        left: 100%;
+        border-color: transparent transparent transparent #000;
+        border-left-color: #555;
+      }
+      @keyframes atomicat-tooltip-rightin {
+        0% {
+          opacity: 0;
+          left: 105%;
+        }
+        100% {
+          opacity: 1;
+          left: 100%;
+        }
+      }
+      @keyframes atomicat-tooltip-leftin {
+        0% {
+          opacity: 0;
+          right: 105%;
+        }
+        100% {
+          opacity: 1;
+          right: 100%;
+        }
+      }
+      @keyframes atomicat-tooltip-topin {
+        0% {
+          opacity: 0;
+          bottom: 110%;
+        }
+        100% {
+          opacity: 1;
+          bottom: 100%;
+        }
+      }
+      @keyframes atomicat-tooltip-bottomin {
+        0% {
+          opacity: 0;
+          top: 110%;
+        }
+        100% {
+          opacity: 1;
+          top: 100%;
+        }
+      }
+      .atomicat-video {
+        overflow: hidden;
+      }
+      .atomicat-video iframe {
+        height: 100%;
+        width: 100%;
+      }
+      .a-v-o-c {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .a-v-o {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        transition: all 0.3s ease;
+      }
+      .a-v-o:hover svg {
+        transform: scale(1.1);
+      }
+      .a-v-p-b {
+        width: 80px;
+        height: 80px;
+      }
+      @media (max-width: 768px) {
+        .a-v-p-b {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      .atomicat-text * {
+        word-break: break-word;
+      }
+      .atomicat-text {
+        white-space: pre-line;
+        color: var(--a-g-content-color);
+      }
+      .atomicat-text :is(h1, h2, h3, h4, h5, h6) {
+        color: var(--a-g-title-color);
+      }
+      .a-txt-extra,
+      .a-txt-extra.a-danger {
+        color: rgb(185 28 28);
+        background-color: rgb(254 226 226);
+      }
+      .a-txt-extra.a-danger.a-highlight {
+        color: rgb(254 242 242);
+        background-color: rgb(220 38 38);
+      }
+      .a-txt-extra.a-info {
+        color: rgb(29 78 216);
+        background-color: rgb(219 234 254);
+      }
+      .a-txt-extra.a-info.a-highlight {
+        color: rgb(239 246 255);
+        background-color: rgb(37 99 235);
+      }
+      .a-txt-extra.a-success {
+        color: rgb(21 128 61);
+        background-color: rgb(220 252 231);
+      }
+      .a-txt-extra.a-success.a-highlight {
+        color: rgb(240 253 244);
+        background-color: rgb(22 163 74);
+      }
+      .a-txt-extra.a-warning {
+        color: rgb(161 98 7);
+        background-color: rgb(254 249 195);
+      }
+      .a-txt-extra.a-warning.a-highlight {
+        color: rgb(66 32 6);
+        background-color: rgb(250 204 21);
+      }
+      .a-txt-extra.a-light {
+        color: rgb(63 63 70);
+        background-color: rgb(244 244 245);
+      }
+      .a-txt-extra.a-light.a-highlight {
+        color: rgb(250 250 250);
+        background-color: rgb(82 82 91);
+      }
+      .a-txt-extra {
+        padding: 1rem;
+        border-radius: 0.375rem;
+        line-height: 1.4;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .a-txt-timer {
+        line-height: 1.25;
+        text-align: center;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+      .atomicat-text p {
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .atomicat-heading-title {
+        white-space: pre-line;
+      }
+      .atomicat-heading-title h1 {
+        font-size: 48px;
+        font-weight: 700;
+      }
+      .atomicat-heading-title h2 {
+        font-size: 36px;
+        font-weight: 600;
+      }
+      .atomicat-heading-title h3 {
+        font-size: 24px;
+        font-weight: 500;
+      }
+      .atomicat-delay {
+        display: none;
+      }
+    </style>
+    <style>
+      .atomicat-big-container {
+        overflow: hidden;
+      }
+      .a-b-cont {
+        overflow: hidden;
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/cpsales.js"
+    ></script>
+    <title>Secret Recipe</title>
+  </head>
+  <body
+    id="_gosOr6TrTKg5Gaw9cXNV4z317UG3"
+    data-page="_PNtpaoNkiQCYwJTbBN3D"
+    data-page-type="page"
+    class="atomicat-disable-selection"
+  >
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-subids
+      async
+      defer="defer"
+    ></script>
+    <div class="a-b-cont">
+      <div class="atomicat-container-37b1d83 a-b-o-cont">
+        <style id="atomicat-style-37b1d83">
+          .atomicat-container-37b1d83 > .a-o-cont {
+            padding-bottom: 0;
+          }
+          @media screen and (max-width: 1024px) {
+            .atomicat-container-37b1d83 > .a-o-cont {
+              padding-bottom: 0;
+            }
+          }
+          .atomicat-container-37b1d83 > .a-o-cont > .a-cont {
+            flex-direction: row;
+          }
+          .a-b-cont .atomicat-container-37b1d83.a-b-o-cont {
+            background: #ff002a;
+            margin-bottom: 30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+          }
+          @media screen and (max-width: 1024px) {
+            .a-b-cont .atomicat-container-37b1d83.a-b-o-cont {
+              background: #ff002a;
+              margin-bottom: 20px;
+            }
+          }
+          @media screen and (max-width: 480px) {
+            .a-b-cont .atomicat-container-37b1d83.a-b-o-cont {
+              margin-top: 0;
+            }
+          }
+        </style>
+        <div class="a-o-cont a-cont-f-w">
+          <div class="a-cont a-i-cont">
+            <div class="a-c-cont a-c-cont-dcd1fc2 a-r">
+              <style id="atomicat-style-dcd1fc2">
+                .a-c-cont.a-c-cont-dcd1fc2 {
+                  width: 100%;
+                }
+                @media screen and (max-width: 1024px) {
+                  .a-c-cont.a-c-cont-dcd1fc2 {
+                    width: 100%;
+                  }
+                }
+                .a-e-cont.atomicat-heading-title-dcd1fc2 h2:hover {
+                  -webkit-text-fill-color: unset;
+                }
+                .a-e-cont.atomicat-heading-title-dcd1fc2 h2 {
+                  text-align: center;
+                  color: #fff;
+                  background-image: unset;
+                }
+                @media screen and (max-width: 1024px) {
+                  .a-e-cont.atomicat-heading-title-dcd1fc2 h2 {
+                    text-align: center;
+                    font-size: 20px;
+                  }
+                }
+                @media screen and (max-width: 480px) {
+                  .a-e-cont.atomicat-heading-title-dcd1fc2 h2 {
+                    font-size: 15px;
+                  }
+                }
+                .a-c-cont-dcd1fc2 > .a-e-cont {
+                  margin-bottom: 0;
+                }
+                @media screen and (max-width: 480px) {
+                  .a-c-cont-dcd1fc2 > .a-e-cont {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                  }
+                }
+              </style>
+              <div
+                class="a-e-cont a-r atomicat-element-container-dcd1fc2 atomicat-heading-title-dcd1fc2 atomicat-heading-title atomicat-text-dcd1fc2"
+              >
+                <h2>
+                  TODAY <span class="atomicat-hoje">11/08/2025</span> IT'S YOUR
+                  LAST CHANCE TO WATCH THIS VIDEO
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="atomicat-container-4558b12 a-b-o-cont">
+        <style id="atomicat-style-4558b12">
+          .atomicat-container-4558b12 > .a-o-cont {
+            padding-bottom: 0;
+          }
+          @media screen and (max-width: 1024px) {
+            .atomicat-container-4558b12 > .a-o-cont {
+              padding-bottom: 0;
+            }
+          }
+          .atomicat-container-4558b12 > .a-o-cont > .a-cont {
+            flex-direction: row;
+          }
+          .a-b-cont .atomicat-container-4558b12.a-b-o-cont {
+            background: #fff;
+            margin-bottom: 30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+          }
+          @media screen and (max-width: 1024px) {
+            .a-b-cont .atomicat-container-4558b12.a-b-o-cont {
+              background: #fff;
+              margin-bottom: 20px;
+            }
+          }
+          @media screen and (max-width: 480px) {
+            .a-b-cont .atomicat-container-4558b12.a-b-o-cont {
+              background: #fff;
+              margin-top: 0;
+            }
+          }
+        </style>
+        <div class="a-o-cont a-cont-f-w">
+          <div class="a-cont a-i-cont">
+            <div class="a-c-cont a-c-cont-da0d265 a-r">
+              <style id="atomicat-style-da0d265">
+                .a-c-cont.a-c-cont-da0d265 {
+                  width: 100%;
+                }
+                @media screen and (max-width: 1024px) {
+                  .a-c-cont.a-c-cont-da0d265 {
+                    width: 100%;
+                  }
+                }
+                .a-e-cont.atomicat-heading-title-da0d265 h2:hover {
+                  -webkit-text-fill-color: unset;
+                }
+                .a-e-cont.atomicat-heading-title-da0d265 h2 {
+                  text-align: center;
+                  color: #000;
+                  background-image: unset;
+                }
+                @media screen and (max-width: 1024px) {
+                  .a-e-cont.atomicat-heading-title-da0d265 h2 {
+                    text-align: center;
+                    font-size: 20px;
+                  }
+                }
+                .a-c-cont-da0d265 > .a-e-cont {
+                  margin-bottom: 0;
+                }
+                @media screen and (max-width: 480px) {
+                  .a-c-cont-da0d265 > .a-e-cont {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                  }
+                }
+              </style>
+              <div
+                class="a-e-cont a-r atomicat-element-container-da0d265 atomicat-heading-title-da0d265 atomicat-heading-title atomicat-text-da0d265"
+              >
+                <h2>THE MOST USED MATINAL ROUTINE BY WOMEN IN THE WORLD!</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="atomicat-container-2c24819 a-b-o-cont">
+        <style id="atomicat-style-2c24819">
+          .atomicat-container-2c24819 > .a-o-cont {
+            padding-bottom: 6%;
+          }
+          .atomicat-container-2c24819 > .a-o-cont > .a-cont {
+            flex-direction: row;
+          }
+          .a-b-cont .atomicat-container-2c24819.a-b-o-cont {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+          }
+          @media screen and (max-width: 480px) {
+            .a-b-cont .atomicat-container-2c24819.a-b-o-cont {
+              background: 0 0;
+              margin-top: 0;
+            }
+          }
+        </style>
+        <div class="a-o-cont a-cont-f-w">
+          <div class="a-cont a-i-cont">
+            <div class="atomicat-container-75a9f49 a-b-o-cont">
+              <style id="atomicat-style-75a9f49">
+                @media screen and (max-width: 480px) {
+                  .atomicat-container-75a9f49 > .a-o-cont {
+                    padding-right: 0;
+                    padding-left: 0;
+                  }
+                }
+                .atomicat-container-75a9f49 > .a-o-cont > .a-cont {
+                  flex-direction: column;
+                }
+                .a-b-cont .atomicat-container-75a9f49.a-b-o-cont {
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  width: 100%;
+                }
+                @media screen and (max-width: 480px) {
+                  .a-b-cont .atomicat-container-75a9f49.a-b-o-cont {
+                    margin-top: 0;
+                    width: 100%;
+                  }
+                }
+              </style>
+              <div class="a-o-cont a-cont-b">
+                <div class="a-cont a-i-cont">
+                  <div class="a-c-cont a-c-cont-00465ff a-r">
+                    <style id="atomicat-style-00465ff">
+                      .atomicat-video-00465ff {
+                        margin-right: auto;
+                        margin-left: auto;
+                      }
+                      .atomicat-video-00465ff iframe {
+                        margin-right: auto;
+                        margin-left: auto;
+                      }
+                      .a-c-cont-00465ff {
+                        width: 100%;
+                      }
+                      @media screen and (max-width: 480px) {
+                        .a-c-cont-00465ff > .a-e-cont {
+                          margin-top: 0;
+                        }
+                      }
+                    </style>
+                    <div
+                      class="a-e-cont a-r atomicat-element-container-00465ff atomicat-video-00465ff atomicat-video"
+                    >
+                      <div style="aspect-ratio: 1.77777">
+                        <vturb-smartplayer
+                          id="vid-689a83c1ae4571d14adb5354"
+                          style="display: block; margin: 0 auto; width: 100%"
+                        ></vturb-smartplayer>
+                        <script type="text/javascript">
+                          var s = document.createElement("script");
+                          (s.src =
+                            "https://scripts.converteai.net/56e3030a-dc52-4401-8255-def978b10bbf/players/689a83c1ae4571d14adb5354/v4/player.js"),
+                            (s.async = !0),
+                            document.head.appendChild(s);
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="a-c-cont a-c-cont-5604340 a-r">
+                    <style id="atomicat-style-5604340">
+                      @media screen and (max-width: 1024px) {
+                        .a-c-cont.a-c-cont-5604340 {
+                          width: 100%;
+                        }
+                      }
+                      @media screen and (max-width: 480px) {
+                        .a-c-cont.a-c-cont-5604340 {
+                          width: 100%;
+                        }
+                      }
+                      .a-e-cont.atomicat-heading-title-5604340 h3:hover {
+                        -webkit-text-fill-color: unset;
+                      }
+                      .a-e-cont.atomicat-heading-title-5604340 h3 {
+                        text-align: center;
+                        font-size: 20px;
+                      }
+                      @media screen and (max-width: 1024px) {
+                        .a-e-cont.atomicat-heading-title-5604340 h3 {
+                          text-align: center;
+                          font-size: 17px;
+                        }
+                      }
+                      @media screen and (max-width: 480px) {
+                        .a-e-cont.atomicat-heading-title-5604340 h3 {
+                          text-align: center;
+                          font-size: 13px;
+                        }
+                      }
+                    </style>
+                    <div
+                      class="a-e-cont a-r atomicat-element-container-5604340 atomicat-heading-title-5604340 atomicat-heading-title atomicat-text-5604340"
+                    >
+                      <h3>🔊 MAKE SURE THE SOUND IS TURNED ON!</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="atomicat-container-65bc368 a-b-o-cont atomicat-delay">
+        <style id="atomicat-style-65bc368">
+          .atomicat-container-65bc368 > .a-o-cont {
+            padding-bottom: 6%;
+          }
+          .atomicat-container-65bc368 > .a-o-cont > .a-cont {
+            flex-direction: row;
+          }
+          .a-b-cont .atomicat-container-65bc368.a-b-o-cont {
+            margin-top: 0;
+            background: #fff;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+          }
+          @media screen and (max-width: 480px) {
+            .a-b-cont .atomicat-container-65bc368.a-b-o-cont {
+              margin-top: 0;
+              width: 90%;
+            }
+          }
+        </style>
+        <div class="a-o-cont a-cont-f-w">
+          <div class="a-cont a-i-cont">
+            <div class="a-c-cont a-c-cont-4a693bf a-r">
+              <style id="atomicat-style-4a693bf">
+                @media screen and (max-width: 480px) {
+                  .a-c-cont-4a693bf {
+                    align-self: center;
+                  }
+                }
+                @keyframes atomicat-animation-pulseShadow-ef7661f6 {
+                  0% {
+                    box-shadow: #00bc02 0 0 0 0;
+                  }
+                  80% {
+                    box-shadow: rgba(0, 255, 23, 0) 0 0 0 12px;
+                  }
+                }
+                @keyframes atomicat-animation-pulseShadow-ef7661f6 {
+                  0% {
+                    box-shadow: #00bc02 0 0 0 0;
+                  }
+                  80% {
+                    box-shadow: rgba(0, 255, 23, 0) 0 0 0 12px;
+                  }
+                }
+                .a-c-cont.a-c-cont-4a693bf {
+                  width: 100%;
+                }
+                @media screen and (max-width: 1024px) {
+                  .a-c-cont.a-c-cont-4a693bf {
+                    width: 100%;
+                  }
+                }
+                @media screen and (max-width: 480px) {
+                  .a-c-cont.a-c-cont-4a693bf {
+                    width: 100%;
+                  }
+                }
+                .atomicat-button-4a693bf.a-e-cont .atomicat-button:hover {
+                  animation: 2s ease-out 0s infinite normal none running
+                    atomicat-animation-pulseShadow-ef7661f6;
+                }
+                .atomicat-button-4a693bf.a-e-cont .atomicat-button {
+                  width: 80%;
+                  background: #00bc02;
+                  font-size: 30px;
+                  animation: 1s ease-out 0s infinite normal none running
+                    atomicat-animation-pulseShadow-ef7661f6;
+                }
+                @media screen and (max-width: 1024px) {
+                  .atomicat-button-4a693bf.a-e-cont .atomicat-button {
+                    width: 80%;
+                    font-size: 25px;
+                  }
+                }
+                @media screen and (max-width: 480px) {
+                  .atomicat-button-4a693bf.a-e-cont .atomicat-button {
+                    align-self: center;
+                    width: 100%;
+                    font-weight: 900;
+                    font-size: 20px;
+                  }
+                }
+              </style>
+              <div
+                class="a-e-cont a-r atomicat-element-container-4a693bf atomicat-button-4a693bf atomicat-button atomicat-button-wrapper atomicat-flex-column"
+              >
+                <a
+                  href="javascript:void(0)"
+                  class="atomicat-button-before atomicat-button"
+                  ><span>I WANT THE NATURAL PROTOCOL</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="atomicat-container-bf2986b a-b-o-cont">
+        <style id="atomicat-style-bf2986b">
+          .atomicat-container-bf2986b > .a-o-cont > .a-cont {
+            flex-direction: row;
+          }
+          .a-b-cont .atomicat-container-bf2986b.a-b-o-cont {
+            margin-top: 200px;
+            background: #343a40;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          @media screen and (max-width: 1024px) {
+            .a-b-cont .atomicat-container-bf2986b.a-b-o-cont {
+              margin-top: 200px;
+              background: #343a40;
+            }
+          }
+          @media screen and (max-width: 480px) {
+            .a-b-cont .atomicat-container-bf2986b.a-b-o-cont {
+              margin-top: 300px;
+            }
+          }
+        </style>
+        <div class="a-o-cont a-cont-b">
+          <div class="a-cont a-i-cont">
+            <div class="atomicat-container-7baf336 a-b-o-cont">
+              <style id="atomicat-style-7baf336">
+                .atomicat-container-7baf336 > .a-o-cont > .a-cont {
+                  flex-direction: column;
+                }
+                .a-b-cont .atomicat-container-7baf336.a-b-o-cont {
+                  background: #343a40;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  width: 100%;
+                }
+                @media screen and (max-width: 480px) {
+                  .a-b-cont .atomicat-container-7baf336.a-b-o-cont {
+                    width: 100%;
+                  }
+                }
+              </style>
+              <div class="a-o-cont a-cont-f-w">
+                <div class="a-cont a-i-cont">
+                  <div class="atomicat-container-30934ee a-b-o-cont">
+                    <style id="atomicat-style-30934ee">
+                      .atomicat-container-30934ee > .a-o-cont > .a-cont {
+                        flex-direction: column;
+                      }
+                      @media screen and (max-width: 480px) {
+                        .atomicat-container-30934ee > .a-o-cont > .a-cont {
+                          min-height: 77px;
+                        }
+                      }
+                      .a-b-cont .atomicat-container-30934ee.a-b-o-cont {
+                        background: #343a40;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 100%;
+                      }
+                      @media screen and (max-width: 1024px) {
+                        .a-b-cont .atomicat-container-30934ee.a-b-o-cont {
+                          background: #343a40;
+                        }
+                      }
+                      @media screen and (max-width: 480px) {
+                        .a-b-cont .atomicat-container-30934ee.a-b-o-cont {
+                          margin-top: 60px;
+                          order: 4;
+                          min-height: 77px;
+                          background: #343a40;
+                          width: 100%;
+                        }
+                      }
+                      @media screen and (max-width: 480px) {
+                        .atomicat-container-30934ee > .a-o-cont {
+                          min-height: 77px;
+                        }
+                      }
+                    </style>
+                    <div class="a-o-cont a-cont-f-w">
+                      <div class="a-cont a-i-cont">
+                        <div class="a-c-cont a-c-cont-253f0ea a-r">
+                          <style id="atomicat-style-253f0ea">
+                            .a-e-cont.atomicat-heading-title-253f0ea p:hover {
+                              -webkit-text-fill-color: unset;
+                            }
+                            .a-e-cont.atomicat-heading-title-253f0ea p {
+                              background-image: unset;
+                              line-height: 19px;
+                              color: #fff;
+                              text-align: center;
+                            }
+                            @media screen and (max-width: 1024px) {
+                              .a-e-cont.atomicat-heading-title-253f0ea p {
+                                line-height: 19px;
+                              }
+                            }
+                            @media screen and (max-width: 480px) {
+                              .a-e-cont.atomicat-heading-title-253f0ea p {
+                                font-weight: 300;
+                                line-height: 15px;
+                                text-align: center;
+                                font-size: 12px;
+                              }
+                            }
+                            .a-c-cont-253f0ea > .a-e-cont {
+                              margin-top: 50px;
+                            }
+                            @media screen and (max-width: 480px) {
+                              .a-c-cont-253f0ea > .a-e-cont {
+                                margin-top: 20px;
+                                margin-bottom: -30px;
+                              }
+                            }
+                          </style>
+                          <div
+                            class="a-e-cont a-r atomicat-element-container-253f0ea atomicat-heading-title-253f0ea atomicat-text atomicat-text-253f0ea"
+                          >
+                            <p>
+                              Copyright 2025 – Natural Protocol ®<br />All
+                              rights reserved.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="a-c-cont a-c-cont-27c47da a-r">
+                          <style id="atomicat-style-27c47da">
+                            .a-e-cont.atomicat-heading-title-27c47da p:hover {
+                              -webkit-text-fill-color: unset;
+                            }
+                            .a-e-cont.atomicat-heading-title-27c47da p {
+                              text-align: center;
+                              background-image: unset;
+                              color: #fff;
+                              font-weight: 700;
+                            }
+                            @media screen and (max-width: 480px) {
+                              .a-e-cont.atomicat-heading-title-27c47da p {
+                                text-align: center;
+                                font-size: 13px;
+                                font-weight: 600;
+                              }
+                            }
+                            .a-c-cont-27c47da > .a-e-cont {
+                              margin-top: 45px;
+                            }
+                            @media screen and (max-width: 480px) {
+                              .a-c-cont-27c47da > .a-e-cont {
+                                margin-bottom: 10px;
+                              }
+                            }
+                          </style>
+                          <div
+                            class="a-e-cont a-r atomicat-element-container-27c47da atomicat-heading-title-27c47da atomicat-text atomicat-text-27c47da"
+                          >
+                            <p>Terms of Use | Privacy Policies</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="/js/qAjevl6192885.js"
+      charset="utf-8"
+      id="atomicat-js"
+      defer="defer"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("a").forEach((e) => {
+          e.getAttribute("href")?.includes("#") ||
+            (e.getAttribute("href")?.includes("?")
+              ? e.setAttribute(
+                  "href",
+                  e.getAttribute("href") +
+                    window.location.search.replace("?", "&")
+                )
+              : e.getAttribute("href") &&
+                e.setAttribute(
+                  "href",
+                  e.getAttribute("href") + window.location.search
+                ));
+        });
+      });
+    </script>
+    <script type="text/javascript" defer="defer">
+      document.body.appendChild(
+        Object.assign(document.createElement("script"), {
+          src: "https://cdn.atomicatpages.net/cdn/a.js?cache=" + Date.now(),
+          async: !0,
+          defer: !0,
+        })
+      );
+    </script>
+    <script type="text/javascript" defer="defer">
+      document.body.appendChild(
+        Object.assign(document.createElement("script"), {
+          src:
+            "https://cdn.atomicatpages.net/cdn/atomicpixel.js?cache=" +
+            Date.now(),
+          async: !0,
+          defer: !0,
+        })
+      );
+    </script>
+  </body>
+</html>
